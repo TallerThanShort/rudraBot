@@ -31,6 +31,15 @@ client.once('ready', async () => {
         console.log('status set to ' + randomStatus);
     });
 
+    client.on('guildMemberAdd', guildMember =>{
+        const mess1 = 'welcome to the squad '
+        const mess2 = 'welcome fellow programmer '
+        var messa = [mess1, mess2]
+        var randMess = messa[Math.floor(Math.random()*emoa.length)];
+
+        guildMember.guild.channels.get('910855601117073429').send(randMess + `<@${guildMember.user.id}`);
+    }
+
     client.on('message', message =>{
         if (!message.guild) return;
         if(!message.content.startsWith(prefix) || message.author.bot) return;
