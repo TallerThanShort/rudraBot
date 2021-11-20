@@ -1,0 +1,23 @@
+{
+  "name": "rudrabot",
+  "version": "1.0.1",
+  "description": "A simple dimple welcoming Discord Bot",
+  "main": "bot.js",
+  "scripts": {
+    "test": "node bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TallerThanShort/rudraBot.git"
+  },
+  "author": "TallerThanShort, coder (\"Rudra\")",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TallerThanShort/rudraBot/issues"
+  },
+  "homepage": "https://github.com/TallerThanShort/rudraBot#readme",
+  "dependencies": {
+    "discord.js": "^12.4.1",
+    "fs": "0.0.1-security"
+  }
+}
