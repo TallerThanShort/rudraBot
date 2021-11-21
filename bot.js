@@ -37,8 +37,8 @@ client.once('ready', async () => {
         var messa = [mess1, mess2]
         var randMess = messa[Math.floor(Math.random()*emoa.length)];
 
-        guildMember.guild.channels.get('910855601117073429').send(randMess + `<@${guildMember.user.id}`);
-        msg.guild.channels.cache.find(i => i.name === 'welcome').send(randMess + `<@${guildMember.user.id}`);
+        // guildMember.guild.channels.get('910855601117073429').send(randMess + `<@${guildMember.user.id}`);
+        guildMemberguild.channels.cache.find(i => i.name === 'welcome').send(randMess + `<@${guildMember.user.id}`);
     });
 
     client.on('message', message =>{
