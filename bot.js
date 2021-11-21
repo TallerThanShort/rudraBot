@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
-const prefix = '!';
+const prefix = 'ar?';
 
 const fs = require('fs');
 const { ClientRequest } = require('http');
@@ -21,7 +21,7 @@ client.once('ready', async () => {
     const sta1 = "#welcome"
     const sta2 = "Made by TallerThanShort"
     const sta3 = "chat is ded :O"
-    const sta4 = "my website is cool"
+    const sta4 = "my prefix is ar?"
     const sta5 = `on ${client.guilds.cache.size} servers`
     const sta6 = "oh no"
     var stats = [sta1, sta2, sta3, sta4, sta5, sta6]
