@@ -50,7 +50,7 @@ client.once('ready', async () => {
         if(command === 'ping'){
             client.commands.get('ping').execute(message, args);
         } else if(command === 'info'){
-            client.commands.get('info').execute(message, args, Discord);
+            client.commands.get('info').execute(message, args, Discord, client);
         }
     });
 
