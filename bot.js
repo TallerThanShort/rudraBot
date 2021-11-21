@@ -35,7 +35,7 @@ client.once('ready', async () => {
         const mess1 = 'welcome to the squad '
         const mess2 = 'welcome fellow programmer '
         var messa = [mess1, mess2]
-        var randMess = messa[Math.floor(Math.random()*emoa.length)];
+        var randMess = messa[Math.floor(Math.random()*messa.length)];
 
         // guildMember.guild.channels.get('910855601117073429').send(randMess + `<@${guildMember.user.id}`);
         guildMemberguild.channels.cache.find(i => i.name === 'welcome').send(randMess + `<@${guildMember.user.id}`);
