@@ -8,7 +8,8 @@ module.exports = {
         .setDescription('Here is a list of all the commands')
         .addFields(
         {name: 'commands', value: 'info, ping'},
-        {name: 'prefix', value: '!'}
+        {name: 'prefix', value: 'ar?'},
+        {name: 'guild count', value: `${client.guilds.cache.size}`}
         )
         .setFooter('Bot by TallerThanShort')
 
