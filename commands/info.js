@@ -1,7 +1,7 @@
 module.exports = {
     name: 'info',
     description: 'sends info',
-    execute(message, args, Discord){
+    execute(message, args, Discord, client){
         const generalEmbed = new Discord.MessageEmbed()
         .setColor('RANDOM')
         .setTitle('Command Help/Bot Info')
