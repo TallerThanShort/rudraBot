@@ -9,7 +9,8 @@ module.exports = {
         .addFields(
         {name: 'commands', value: 'info, ping'},
         {name: 'prefix', value: 'ar?'},
-        {name: 'guild count', value: `${client.guilds.cache.size}`}
+        {name: 'guild count', value: `${client.guilds.cache.size}`},
+        {name: 'more bots', value: 'The creator of this bot recommends SYSbot or 8Ball Bot'}
         )
         .setFooter('Bot by TallerThanShort')
 

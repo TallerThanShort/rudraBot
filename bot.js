@@ -26,18 +26,25 @@ client.once('ready', async () => {
     const sta6 = "oh no"
     var stats = [sta1, sta2, sta3, sta4, sta5, sta6]
     var randomStatus = stats[Math.floor(Math.random()*stats.length)];
-        await client.user.setActivity(randomStatus, { type: "WATCHING", url: "https://www.twitch.tv/syslbot" });
+        await client.user.setActivity(randomStatus, { type: "WATCHING", url: "https://www.twitch.tv/ckstudios2003" });
         console.log(`Rudras Bot is on ${client.guilds.cache.size} servers!`);
         console.log('status set to ' + randomStatus);
     });
 
     client.on('guildMemberAdd', guildMember =>{
-        const mess1 = 'welcome to the squad '
-        const mess2 = 'welcome fellow programmer '
-        var messa = [mess1, mess2]
+        const mess1 = `welcome to the squad <@${guildMember.user.id}>`
+        const mess2 = `welcome fellow programmer <@${guildMember.user.id}>` 
+        const mess3 = `welcome <@${guildMember.user.id}>`
+        const mess4 = `glad you are here <@${guildMember.user.id}>`
+        const mess5 = `<@${guildMember.user.id}> just arrived!`
+        const mess6 = `Swaggy <@${guildMember.user.id}> joined!`
+        const mess7 = `An Epic <@${guildMember.user.id}> joined!`
+        const mess8 = `An Epic Explorer joined! Welcome <@${guildMember.user.id}>!!`
+        const mess9 = `Добро пожаловать в клан <@${guildMember.user.id}>`
+        var messa = [mess1, mess2, mess3, mess4, mess5, mess6, mess7, mess8, mess9]
         var randMess = messa[Math.floor(Math.random()*messa.length)];
 
-        guildMember.guild.channels.cache.find(i => i.name === 'welcome').send(randMess + `<@${guildMember.user.id}>`);
+        guildMember.guild.channels.cache.find(i => i.name === 'welcome').send(randMess);
     });
 
     client.on('message', message =>{
