@@ -57,6 +57,8 @@ client.once('ready', async () => {
             client.commands.get('ping').execute(message, args);
         } else if(command === 'info'){
             client.commands.get('info').execute(message, args, Discord, client);
+        } else if(command === 'help'){
+            client.commands.get('help').execute(message, args, Discord);
         }
     });
 
